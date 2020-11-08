@@ -13,9 +13,8 @@ namespace ParsedData.Models
 
         public int DataStateId { get; set; }
         public StateData State { get; set; }
-
-        public int DirectorId { get; set; }
-        public User Executor { get; set; }
-        public int ExecutorId { get; set; }        
+  
+        public int UserId { get; set; }      
+        public User User { get; set; }   
     }
 }

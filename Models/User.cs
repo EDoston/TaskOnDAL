@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace ParsedData.Models
 {
@@ -10,6 +11,6 @@ namespace ParsedData.Models
         public DateTime CreateDate { get; set; }
         public DateTime LastUpdate { get; set; }
         public int StateId { get; set; }
-        public State State { get; set; }       
+        public State State { get; set; }    
     }
 }

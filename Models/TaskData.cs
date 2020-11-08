@@ -1,3 +1,5 @@
+using System;
+
 namespace ParsedData.Models
 {
     public class TaskData

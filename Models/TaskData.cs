@@ -12,9 +12,10 @@ namespace ParsedData.Models
         public DateTime LastUpdate { get; set;}
 
         public int DataStateId { get; set; }
-        public StateData State { get; set; }
-  
-        public int UserId { get; set; }      
-        public User User { get; set; }   
+        public StateData DataState { get; set; }
+
+        public int DirectorId {get; set;}
+        public int ExecuterId { get; set; }      
+        public User Executer { get; set; }   
     }
 }

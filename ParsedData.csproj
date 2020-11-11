@@ -21,6 +21,8 @@
     </PackageReference>
 
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0-rc.2.20475.6" />
+
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.0" />
   </ItemGroup>
 
 </Project>

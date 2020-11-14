@@ -5,9 +5,9 @@ namespace ParsedData.Services
 {
     public interface IUserServiсe
     {
-         List<UsersDto> GetAll();
+         List<UsersDto> GetAll(int page, int size);
          UsersDto GetById(int Id);
          bool Update(UpdateUserDto user);
-         bool SetTask(int Id);
+         bool SetTaskExcutor(int DirectorId, int ExcutorId);
     }
 }

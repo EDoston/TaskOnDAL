@@ -31,8 +31,13 @@ namespace ParsedData
         {
             services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddAutoMapper(typeof(ApiMappings));
+            
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserServiсe, UserService>();
+
+            services.AddScoped<ITaskRepository, TaskRepository>();
+            services.AddScoped<ITaskService, TaskService>();
+
             services.AddControllers();
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen();

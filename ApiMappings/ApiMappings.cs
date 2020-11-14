@@ -10,7 +10,10 @@ namespace ParsedData
         {
             this.CreateMap<User, UsersDto>();
             this.CreateMap<UpdateUserDto, User>();
+            this.CreateMap<User,UpdateUserDto>();
             this.CreateMap<UsersDto, User>();
+
+            this.CreateMap<TaskData, TaskDto>();
         }
     }
 }

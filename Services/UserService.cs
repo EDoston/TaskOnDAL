@@ -25,9 +25,9 @@ namespace ParsedData.Services
             var user  = _userRepository.GetById(Id);
             return _mapper.Map<UsersDto>(user);
         }
-        public bool SetTaskExcutor(int DirectorId, int ExcutorId)
+        public bool SetTaskExcutor(int TaskManagerId, int TaskExcutorId)
         {
-            return _userRepository.SetTaskExcutor(DirectorId, ExcutorId);  
+            return _userRepository.SetTaskExcutor(TaskManagerId, TaskExcutorId);  
         }
         public bool Update(UpdateUserDto user)
         {

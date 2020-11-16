@@ -8,6 +8,6 @@ namespace ParsedData.Services
          List<UsersDto> GetAll(int page, int size);
          UsersDto GetById(int Id);
          bool Update(UpdateUserDto user);
-         bool SetTaskExcutor(int DirectorId, int ExcutorId);
+         bool SetTaskExcutor(int TaskManagerId, int TaskExcutorId);
     }
 }

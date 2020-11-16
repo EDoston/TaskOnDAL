@@ -24,24 +24,24 @@ namespace ParsedData.DAL
         }
         public User GetById(int Id)
         {
-            return _context.Users.FirstOrDefault(x => x.Id == Id);
+            return _context.Users.FirstOrDefault(x => x.UserId == Id);
         }
-        public bool SetTaskExcutor(int DirectorId, int ExcutorId)
+        public bool SetTaskExcutor(int TaskManagerId, int TaskExcutorId)
         {
-            var user = _context.TaskDatas.FirstOrDefault(x => x.DirectorId == DirectorId);
+            var user = _context.TaskDatas.FirstOrDefault(x => x.TaskManagerUserId == TaskManagerId);
             
             if(user == null)
             {
                 return false;
             }
 
-            user.ExecuterId = ExcutorId;
+            user.ExecutorUserId = TaskExcutorId;
 
             return true;
         }
         public bool Update(User user)
         {
-            var foundUser = GetById(user.Id);
+            var foundUser = GetById(user.UserId);
             if(foundUser == null)
             {
                 return false;

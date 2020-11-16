@@ -10,7 +10,7 @@ namespace ParsedData.Dtos
         public string Name { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime LastUpdate { get; set; }
-        public int StateId { get; set; }
-        public State State { get; set; }    
+        public int UserStateId { get; set; }
+        public UserState UserState { get; set; }    
     }
 }

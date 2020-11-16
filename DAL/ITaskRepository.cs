@@ -6,7 +6,7 @@ namespace ParsedData.DAL
 {
     public interface ITaskRepository
     {
-        List<TaskData> GetTaskDirectors(int page, int size);
+        List<TaskData> GetTaskManagers(int page, int size);
         List<TaskData> GetTaskExecutors(int page, int size);
         TaskData GetTask(int id);
         bool Update(TaskData taskData);

@@ -12,8 +12,8 @@ namespace ParsedData.Dtos
         public DateTime CreateDate { get; set; }
         public DateTime LastUpdate { get; set;}
 
-        public int DataStateId { get; set; }
-        public StateData DataState { get; set; }
+        public int TaskStateId { get; set; }
+        public TaskState TaskState { get; set; }
 
         public int DirectorId {get; set;}
         public int ExecuterId { get; set; }      

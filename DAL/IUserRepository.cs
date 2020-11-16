@@ -9,6 +9,6 @@ namespace ParsedData.DAL
         List<User> GetAll(int page, int size);
         User GetById(int Id);
         bool Update(User user);
-        bool SetTaskExcutor(int DirectorId, int ExcutorId);
+        bool SetTaskExcutor(int TaskManagerId, int TaskExcutorId);
     }
 }

@@ -22,17 +22,17 @@ namespace ParsedData.DAL
                 return false;
             }
 
-            taskData.DataStateId = stateId;
+            taskData.TaskStateId = stateId;
             _context.SaveChanges();
 
             return true;
         }
         public TaskData GetTask(int id)
         {
-            var taskData = _context.TaskDatas.FirstOrDefault(x => x.Id == id);
+            var taskData = _context.TaskDatas.FirstOrDefault(x => x.TaskId == id);
             return taskData;
         }
-        public List<TaskData> GetTaskDirectors(int page, int size)
+        public List<TaskData> GetTaskManagers(int page, int size)
         {
              var taskDatas = _context.TaskDatas
                 .Skip((page - 1) * size)
@@ -50,7 +50,7 @@ namespace ParsedData.DAL
 
         public bool Update(TaskData _taskData)
         {
-            var taskData = GetTask(_taskData.Id);
+            var taskData = GetTask(_taskData.TaskId);
             if(taskData == null)
             {
                 return false;
@@ -71,7 +71,7 @@ namespace ParsedData.DAL
                 return false;
             }
 
-            taskData.DataStateId = stateId;
+            taskData.TaskStateId = stateId;
 
             _context.SaveChanges();
 

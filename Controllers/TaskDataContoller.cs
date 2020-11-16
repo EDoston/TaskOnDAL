@@ -4,7 +4,7 @@ using ParsedData.Services;
 namespace ParsedData.Controllers
 {
     [ApiController]
-    [Route("controller")]
+    [Route("[controller]")]
     public class TaskDataContoller : ControllerBase
     {
         private readonly TaskService _taskService;
@@ -28,7 +28,7 @@ namespace ParsedData.Controllers
         [HttpGet("{page}/{size}")]
         public IActionResult GetTaskDirectors(int page, int size)
         {
-            var result = _taskService.GetTaskDirectors(page, size);
+            var result = _taskService.GetTaskManagers(page, size);
             if(result == null)
             {
                 return NotFound();

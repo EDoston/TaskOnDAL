@@ -22,9 +22,9 @@ namespace ParsedData.Services
             return _mapper.Map<TaskDto>(result);
         }
 
-        public List<TaskDto> GetTaskDirectors(int page, int size)
+        public List<TaskDto> GetTaskManagers(int page, int size)
         {
-           var result = _taskRepository.GetTaskDirectors(page, size);
+           var result = _taskRepository.GetTaskManagers(page, size);
             return _mapper.Map<List<TaskDto>>(result);
         }
 

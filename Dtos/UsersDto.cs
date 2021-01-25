@@ -13,4 +13,5 @@ namespace ParsedData.Dtos
         public int UserStateId { get; set; }
         public UserState UserState { get; set; }    
     }
+    
 }

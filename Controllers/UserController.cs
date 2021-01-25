@@ -4,6 +4,7 @@ using ParsedData.Services;
 
 namespace ParsedData.Controllers
 {
+    // User manipulation
     [ApiController]
     [Route("[controller]")]
     public class UserController : ControllerBase
